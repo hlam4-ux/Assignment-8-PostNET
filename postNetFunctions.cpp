@@ -41,4 +41,7 @@ int getCheckDigit(string zip)
 string makePostNet(string zip)
 {
   string barcode = "1";
+  for (int i = 0; i < zip.length(); i++) {
+    barcode = barcode + encodeDigit(zip[i]);
+  }
 }
