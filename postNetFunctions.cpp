@@ -24,3 +24,11 @@ string encodeDigit(char digit)
     return "10100";
   }
 }
+
+int getCheckDigit(satring zip)
+{
+  int total = 0;
+  for (int i = 0; i < zip.length(); i++) {
+    total = total + (zip[i] - '0');
+  }
+}
