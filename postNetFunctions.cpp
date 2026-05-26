@@ -35,4 +35,5 @@ int getCheckDigit(satring zip)
   if (checkDigit == 10) {
     checkDigit = 0;
   }
+  return checkDigit;
 }
