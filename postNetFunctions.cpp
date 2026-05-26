@@ -23,6 +23,7 @@ string encodeDigit(char digit)
   } else if (digit == '9') {
     return "10100";
   }
+  return "";
 }
 
 int getCheckDigit(string zip)
@@ -44,4 +45,9 @@ string makePostNet(string zip)
   for (int i = 0; i < zip.length(); i++) {
     barcode = barcode + encodeDigit(zip[i]);
   }
+  int checkDigit = getCheckDigit(zip);
+  barcode = barcode + encodeDigit('0' + checkDigit);
+  barcode = barcode + "1";
+
+  return barcode;
 }
