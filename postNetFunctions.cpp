@@ -31,4 +31,5 @@ int getCheckDigit(satring zip)
   for (int i = 0; i < zip.length(); i++) {
     total = total + (zip[i] - '0');
   }
+  int checkDigit = 10 - (total % 10);
 }
