@@ -4,3 +4,5 @@
 using namespace std;
 
 string encodeDigit(char digit);
+
+int getCheckDigit(string zip);
