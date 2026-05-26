@@ -10,4 +10,8 @@ int main()
 
   cout << "Enter zip code";
   cin >> zip;
+
+  cout << makePostNet(zip) << endl;
+
+  return 0;
 }
