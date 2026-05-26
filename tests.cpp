@@ -9,3 +9,9 @@ TEST_CASE("encodeDight")
   CHECK(encodeDigit('5') == "01010");
   CHECK(encodeDigit('8') == "10010");
 }
+
+TEST_CASE("getCheckDigit")
+{
+  CHECK(getCheckDigit("97301") == 0);
+  CHECK(getCheckDigit("12345") == 5);
+}
