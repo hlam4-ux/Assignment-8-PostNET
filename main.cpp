@@ -11,12 +11,15 @@ int main()
   ifstream inFile("input.txt");
   ofstream outFile("output.txt");
 
+  string city;
+  string state;
   string zip;
 
-  cout << "Enter zip code";
-  cin >> zip;
-
-  cout << makePostNet(zip) << endl;
+  while (getline(inFile, city, ',') && getline(inFile, state, ',')
+         && getline(inFile, zip)) {
+    outFile << city << "," << state << " " << zip << endl;
+    outFile << makePostNet(zip) << endl;
+  }
 
   return 0;
 }
