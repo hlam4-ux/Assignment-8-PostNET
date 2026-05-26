@@ -37,3 +37,8 @@ int getCheckDigit(string zip)
   }
   return checkDigit;
 }
+
+string makePostNet(string zip)
+{
+  string barcode = "1";
+}
