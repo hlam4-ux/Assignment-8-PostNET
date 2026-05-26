@@ -25,7 +25,7 @@ string encodeDigit(char digit)
   }
 }
 
-int getCheckDigit(satring zip)
+int getCheckDigit(string zip)
 {
   int total = 0;
   for (int i = 0; i < zip.length(); i++) {
