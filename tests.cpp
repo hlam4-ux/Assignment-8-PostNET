@@ -15,3 +15,9 @@ TEST_CASE("getCheckDigit")
   CHECK(getCheckDigit("97301") == 0);
   CHECK(getCheckDigit("12345") == 5);
 }
+
+TEST_CASE("makePostNet")
+{
+  CHECK(makePostNet("12345") == "100011001010011001001010101011");
+  CHECK(makePostNet("35343") == "100110101000110100110001101001011");
+}
