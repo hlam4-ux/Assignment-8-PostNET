@@ -32,4 +32,7 @@ int getCheckDigit(satring zip)
     total = total + (zip[i] - '0');
   }
   int checkDigit = 10 - (total % 10);
+  if (checkDigit == 10) {
+    checkDigit = 0;
+  }
 }
