@@ -4,5 +4,6 @@ string encodeDigit(char digit)
 {
   if (digit == '0') {
     return "11000";
+  } else if (digit == '1') {
   }
 }
