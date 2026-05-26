@@ -8,5 +8,19 @@ string encodeDigit(char digit)
     return "00011";
   } else if (digit == '2') {
     return "00101";
+  } else if (digit == '3') {
+    return "00110";
+  } else if (digit == '4') {
+    return "01001";
+  } else if (digit == '5') {
+    return "01010";
+  } else if (digit == '6') {
+    return "01100";
+  } else if (digit == '7') {
+    return "10001";
+  } else if (digit == '8') {
+    return "10010";
+  } else if (digit == '9') {
+    return "10100";
   }
 }
